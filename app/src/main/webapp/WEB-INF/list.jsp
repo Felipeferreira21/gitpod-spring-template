@@ -16,12 +16,13 @@
                     <th>Id</th>
                     <th>Título</th>
                     <th>anoDeLancamento</th>
+                    <th>&nbsp;</th>
                 </tr>
                 <c:forEach var="item" items="${jogos}">
                     <tr>
                         <td>${item.id}</td>
                         <td>${item.titulo}</td>
-                        <td>${item.anoDeLancamento}/td>
+                        <td>${item.anoDeLancamento}</td>
                     
                         <td>
                             <a href="/jogo/update?id=${item.id}" class="btn btn-warning">Editar</a>
